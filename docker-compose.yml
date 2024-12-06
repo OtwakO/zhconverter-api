@@ -1,0 +1,11 @@
+services:
+  zhconverter:
+    build: .
+    container_name: zhconverter
+    ports:
+      - :8080
+
+networks:
+  default:
+    external: true
+    name:
